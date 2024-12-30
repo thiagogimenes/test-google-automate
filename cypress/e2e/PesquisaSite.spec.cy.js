@@ -55,21 +55,19 @@ describe('Pesquisa site', () => {
     cy.visit('http://google.com.br')
     // Act
     cy.get('#APjFqb').type('13215646.654.9/asdfasd')
-    cy.get('.FPdoLc > center > .gNO89b')
+    cy.get('.FPdoLc > center > .gNO89b').click()
     // Assert
-    //cy.contains('Sua pesquisa não encontrou nenhum documento correspondente')
+    cy.contains('Sua pesquisa não encontrou nenhum documento correspondente')
   })
-/*
+  
   it('Busca de um site acessando através do link', () => {
     // Arrange
     cy.visit('http://google.com.br')
     // Act
     cy.get('#APjFqb').type('cypress')
     cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
-    cy.get('[lang="en"] > .tF2Cxc > .yuRUbf > :nth-child(1) > [jscontroller="msmzHf"] > a > .LC20lb').click()
-        // Assert
-    cy.contains('Test. Automate.')
+    // Assert
+    cy.contains('Cypress: Testing Frameworks for Javascript | Write, Run, Debug')
   })
-    */
 })
 
