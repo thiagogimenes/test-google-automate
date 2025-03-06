@@ -1,5 +1,7 @@
 # Cypress
 
+Projeto de estudo de cypress criando cenários automatizados com base em aulas da qazando. 
+
 
 #### Projeto em cypress 
 
